@@ -1,16 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Navbar from './Navbar.js';
+import Navbar from './components/Navbar.js';
+import AddToCartButton from './components/AddToCartButton';
 
 function App() {
   return (
     <div className="item-details-page">
-
       <Navbar />
-
       <div className='container item-details-body'>
-
         <div className="row banner">
           <img src="banner.jpg" alt="Item" />
         </div>
@@ -24,13 +22,10 @@ function App() {
             <span>Price</span>
             <p>Item Description</p>
             <p>Item Price</p>
-            <button type="button" class="btn btn-success">Add To Card</button>
+            <AddToCartButton />
           </div>
         </div>
-        <div className="row item-more-photos">
-
-        </div>
-
+        <div className="row item-more-photos"></div>
       </div>
     </div>
   );
