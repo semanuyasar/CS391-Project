@@ -1,0 +1,25 @@
+.item-details {
+  border: 1px solid rgb(114, 107, 107);
+  color: #000000;
+}
+
+.item-details-right {
+  background-color: #e0e0e0;
+}
+
+.item-details-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-details-body > .row {
+  margin-bottom: 20px; /* Add bottom margin between rows */
+}
+
+.banner {
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
