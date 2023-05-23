@@ -13,3 +13,13 @@
   align-items: center;
 }
 
+.item-details-body > .row {
+  margin-bottom: 20px; /* Add bottom margin between rows */
+}
+
+.banner {
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
