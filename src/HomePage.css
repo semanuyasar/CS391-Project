@@ -1,0 +1,19 @@
+.image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .wide-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .content {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
