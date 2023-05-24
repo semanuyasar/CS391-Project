@@ -14,7 +14,8 @@ function CustomNavbar() {
             <Nav.Link href="/deals">Deals</Nav.Link>
             <Form inline className="ml-auto d-lg-block d-none">
               <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            </Form>
+            </Form></Nav>
+            <Nav className="ml-auto">
             <Nav.Link href="/cart">Cart</Nav.Link>
             <Nav.Link href="/account">Account</Nav.Link>
             <Button variant="outline-light" href="/sign-up">Sign up</Button>
