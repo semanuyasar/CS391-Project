@@ -11,11 +11,11 @@ const Cart = () => {
         </div>
 
         <div className="row cart-details">
-        <div className='col cart-details-left'>
-            <h1>Cart Items</h1>
+        <div className='col-7 cart-details-left'>
+            <h3>Cart Items</h3>
           </div>
-          <div className='col cart-details-right'>
-            <h1>Order Summary</h1>
+          <div className='col-3 cart-details-right'>
+            <h3>Order Summary</h3>
             {/* Include order summary details here */}
           </div>
         </div>

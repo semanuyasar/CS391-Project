@@ -8,7 +8,7 @@ function CustomNavbar() {
         <Navbar.Brand href="/">Everything Here!</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
-          <Nav className="ml-auto">
+          <Nav className="container-fluid">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/categories">Categories</Nav.Link>
             <Nav.Link href="/deals">Deals</Nav.Link>
@@ -18,7 +18,7 @@ function CustomNavbar() {
           <Nav className="ml-auto">
             <Nav.Link href="/cart">Cart</Nav.Link>
             <Nav.Link href="/account">Account</Nav.Link>
-            <Button variant="outline-light" href="/sign-up">Sign up</Button>
+            <Button variant="outline-light" size='sm' href="/sign-up">Sign Up</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
