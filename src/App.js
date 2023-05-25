@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import HomePage from './HomePage';
+import Cart from './Cart';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
             
             <Routes>
               <Route path="/" element={<HomePage />} />
+              <Route path="/cart" element={<Cart/>} />
+
               {/* Add more routes for other pages */}
             </Routes>
           </div>
