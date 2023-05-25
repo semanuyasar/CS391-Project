@@ -12,11 +12,7 @@ function App() {
         <div className="main-page">
           <Navbar />
           <div className="container main-body">
-            <div className="row banner">
-              <b/>
-              <b/>
-              <img src="banner.jpg" alt="Item" />
-            </div>
+            
             <Routes>
               <Route path="/" element={<HomePage />} />
               {/* Add more routes for other pages */}

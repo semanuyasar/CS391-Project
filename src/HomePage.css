@@ -3,17 +3,32 @@
     width: 100%;
   }
   
-  .wide-image {
+.wide-image {
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
+}
   
-  .content {
+.content {
     position: absolute;
     top: 75%;
     left: 20%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
+
+.homepage {
+  display: flex;
+}
+
+.left-side {
+  flex: 1;
+  background-color: #364461;
+}
+
+.right-side {
+  flex: 1;
+  background-color: #b8cdd0;
+}
+
   
