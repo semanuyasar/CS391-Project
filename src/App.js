@@ -19,8 +19,7 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/cart" element={<Cart/>} />
-              <Route path="/item-details" element={<ItemDetails/>} />
-              {/* Add more routes for other pages */}
+              <Route exact path="/items/:id" component={ItemDetails} />
             </Routes>
           </div>
           <Footer/>

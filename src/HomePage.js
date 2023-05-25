@@ -5,26 +5,6 @@ import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import AddToCartButton from './components/AddToCartButton';
 
 const HomePage = () => {
-
-  const [cart, setCart] = useState([]);
-
-  /*const handleAddToCart = (productId, productName) => {
-    const existingProduct = cart.find((product) => product.id === productId);
-    if (existingProduct) {
-      const updatedCart = cart.map((product) =>
-        product.id === productId ? { ...product, quantity: product.quantity + 1 } : product
-      );
-      setCart(updatedCart);
-    } else {
-      const newProduct = {
-        id: productId,
-        name: productName,
-        quantity: 1,
-      };
-      setCart([...cart, newProduct]);
-    }
-  };*/
-
   return (
     <Container className='text-center'>
       <h1>Welcome to Our Store!</h1>
@@ -73,9 +53,9 @@ const renderProductCard = (id, name, feature, line, price, imagePath) => {
             <Card.Text>{feature}</Card.Text>
             <Card.Text>{line}</Card.Text>
             <Card.Text>{price}</Card.Text>
-            <Card.Link>Learn More</Card.Link>
+            <Card.Link to={`/items/${id}`} className="mr-2">Learn More</Card.Link>
           </div>
-          <div className="mt-auto">
+          <div className="mt-auto">    
           <AddToCartButton onClick={handleAddToCart} />
           </div>
         </Card.Body>
