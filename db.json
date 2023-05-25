@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "name": "Macbook Air",
+      "name": "MacBook Air",
       "feature": "M1 chip",
       "line": "Power. It’s in the Air.",
       "price": "$999.99",
@@ -47,6 +47,23 @@
       "line": "Wireless. Effortless. Magical.",
       "price": "$129.99",
       "photoURL": "airpods.jpg"
+    },
+    {
+      "id": 7,
+      "name": "iPad Mini",
+      "feature": "128 GB",
+      "line": "Mega power. Mini sized.",
+      "price": "$499.99",
+      "photoURL": "ipadmini.jpg"
+    },
+    {
+      "id": 8,
+      "name": "MacBook Pro",
+      "feature": "M2 chip",
+      "line": "Mover. Maker. Boundary breaker.",
+      "price": "$1299.99",
+      "photoURL": "macbookpro.jpg"
     }
+
   ]
 }
