@@ -3,6 +3,7 @@ import './HomePage.css';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import AddToCartButton from './components/AddToCartButton';
+import ItemDetails from './ItemDetails';
 
 const HomePage = () => {
   return (
@@ -51,7 +52,9 @@ const renderProductCard = (id, name, feature, line, price, imagePath) => {
           <Card.Text>{feature}</Card.Text>
           <Card.Text>{line}</Card.Text>
           <Card.Text>{price}</Card.Text>
-          <Card.Link>Learn More</Card.Link>
+          <Link to={`/items/${id}`} className="btn btn-primary mr-2">
+            Learn More
+          </Link>
           <AddToCartButton onClick={handleAddToCart} />
         </Card.Body>
       </Card>

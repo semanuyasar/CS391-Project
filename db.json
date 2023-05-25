@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "iPad",
+      "brand": "Apple",
+      "photoURL": "ipad.jpg",
+      "description": "All the essentials in the most affordable iPad.",
+      "price": "$329.99"
+    }
+  ]
+}

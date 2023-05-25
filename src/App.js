@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import HomePage from './HomePage';
 import Cart from './Cart';
+import ItemDetails from './ItemDetails';
 
 function App() {
   return (
@@ -17,8 +18,7 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/cart" element={<Cart/>} />
-
-              {/* Add more routes for other pages */}
+              <Route exact path="/items/:id" component={ItemDetails} />
             </Routes>
           </div>
         </div>
