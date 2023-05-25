@@ -6,7 +6,7 @@ const AddToCartButton = ({ onClick }) => {
     <div className="d-flex justify-content-center">
       <Button variant="dark" onClick={onClick}>
        Add to Cart
-    </Button>
+      </Button>
     </div>
   );
 };
