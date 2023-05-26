@@ -13,11 +13,11 @@
     },
     {
       "id": 2,
-      "name": "Apple 2020 MacBook Air Laptop M1 Chip, 13' Retina Display, 8GB RAM, 256GB SSD Storage",
-      "feature": "All-Day Battery Life – Go longer than ever with up to 18 hours of battery life.",
+      "name": "MacBook Air",
+      "feature": "Apple 2020 Laptop M1 Chip, 13' Retina Display, 8GB RAM, 256GB SSD Storage",
       "line": "Power. It’s in the Air.",
       "price": "$999.99", 
-      "description":"Lorem",
+      "description":"All-Day Battery Life – Go longer than ever with up to 18 hours of battery life.",
       "photoURL": "macbook.jpg",
       "photoURL1": "macbook.jpg",
       "photoURL2": "iphone13.jpg"

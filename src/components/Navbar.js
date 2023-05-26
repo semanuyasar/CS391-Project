@@ -1,5 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Button, Form, FormControl, Container } from 'react-bootstrap';
+import './Navbar.css';
+
 
 function CustomNavbar() {
   return (
@@ -17,10 +19,12 @@ function CustomNavbar() {
             </Form>
           </Nav>
           <Nav className="ml-auto">
+            <Nav className="custom-right">
             <Nav.Link href="/cart">Cart</Nav.Link>
             <Nav.Link href="/account">Account</Nav.Link>
-            <Button variant="outline-light" size='sm' href="/sign-up">Sign Up</Button>
-          </Nav>
+            </Nav>
+            <Button variant="outline-light" size='sm' href="/sign-up" className="custom-button">Sign Up</Button>
+            </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

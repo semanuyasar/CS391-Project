@@ -1,48 +1,44 @@
-.item-details {
-    border: 1px solid rgb(114, 107, 107);
-  }
-  
-  .item-details-right {
+.item-details-right {
     background-color: #e0e0e0;
-  }
+}
   
-  .item-details-left {
+.item-details-left {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  .item-details-body > .row {
+.item-details-body > .row {
     margin-bottom: 20px;
-  }
+}
   
-  .banner {
+.banner {
     margin-bottom: 20px;
     margin-top: 20px;
-  }
+}
   
-  .other-photos {
+.other-photos {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-  }
+}
   
-  .other-photos .col {
+.other-photos .col {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
-  }
+}
   
-  .other-photos img {
+.other-photos img {
     width: 100px;
     height: 100px;
     border: 1px solid rgb(0, 0, 0);
-  }
+}
 
-  .main-photo {
+.main-photo {
     width: 500px;
     height: 500px;
-  }
+}
   
