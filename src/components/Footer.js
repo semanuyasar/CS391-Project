@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 import './Footer.css';
 
 const Footer = () => {
@@ -20,10 +22,10 @@ const Footer = () => {
           <Col md={4}>
             <h5>Follow Us</h5>
             <div className="social-icons">
-              <a href="#"><i className="fa fa-facebook"></i></a>
-              <a href="#"><i className="fa fa-twitter"></i></a>
-              <a href="#"><i className="fa fa-instagram"></i></a>
-              <a href="#"><i className="fa fa-linkedin"></i></a>
+              <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
+              <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
+              <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+              <a href="#"><FontAwesomeIcon icon={faLinkedin} /></a>
             </div>
           </Col>
         </Row>

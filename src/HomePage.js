@@ -1,10 +1,93 @@
-import React, { useState } from 'react';
+/*import React, { useState, useEffect } from 'react';
 import './HomePage.css';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import AddToCartButton from './components/AddToCartButton';
 
 const HomePage = () => {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    // Fetch the items data from the database
+    fetch('db.json')
+      .then((response) => response.json())
+      .then((data) => setItems(data.items))
+      .catch((error) => {
+        console.error('Error fetching items:', error);
+      });
+  }, []);
+
+  const renderProductCards = () => {
+    return items.map((item) => {
+      return renderProductCard(item.id, item.name, item.feature, item.line, item.price, item.photoURL);
+    });
+  };
+
+  const renderProductCard = (id, name, feature, line, price, imagePath) => {
+    const handleAddToCart = () => {
+      // Logic for adding the product to the cart
+      console.log(`Product ${id} added to cart`);
+    };
+
+    return (
+      <Col md={3} sm={6} className="mb-4" key={id}>
+        <Card className="h-100 d-flex flex-column">
+          <Card.Img variant="top" src={imagePath} alt={name} />
+          <Card.Body className="d-flex flex-column">
+            <div className="flex-grow-1">
+              <Card.Title>{name}</Card.Title>
+              <Card.Text>{feature}</Card.Text>
+              <Card.Text>{line}</Card.Text>
+              <Card.Text>{price}</Card.Text>
+              <Card.Link to={`/items/${id}`} className="mr-2">Learn More</Card.Link>
+            </div>
+            <div className="mt-auto">    
+              <AddToCartButton onClick={handleAddToCart} />
+            </div>
+          </Card.Body>
+        </Card>
+      </Col>
+    );
+  };
+
+  return (
+    <Container className='text-center'>
+      <h1>Welcome to Our Store!</h1>
+      <p>Explore our wide range of products.</p>
+      <Col>
+        <div className="image-container">
+          <img
+            src="wide_image.jpg"
+            alt="Wide Image"
+            className="img-fluid"
+          />
+          <div className="content">
+            <Button as={Link} to="/categories" variant="dark" size='lg'>
+              Shop Now
+            </Button>
+          </div>
+        </div>
+      </Col>
+      <Row className="product row mt-4">
+        {renderProductCards()}
+      </Row>
+    </Container>
+  );
+};
+
+export default HomePage;*/
+
+import React, { useState } from 'react';
+import './HomePage.css';
+import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import AddToCartButton from './components/AddToCartButton';
+import { Link, useNavigate } from 'react-router-dom';
+
+
+const HomePage = () => {
+
+  const history = useNavigate();
+
   return (
     <Container className='text-center'>
       <h1>Welcome to Our Store!</h1>
@@ -41,6 +124,7 @@ const renderProductCard = (id, name, feature, line, price, imagePath) => {
   const handleAddToCart = () => {
     // Logic for adding the product to the cart
     console.log(`Product ${id} added to cart`);
+    //history.push(`/items/${id}`);
   };
   
   return (
@@ -53,7 +137,7 @@ const renderProductCard = (id, name, feature, line, price, imagePath) => {
             <Card.Text>{feature}</Card.Text>
             <Card.Text>{line}</Card.Text>
             <Card.Text>{price}</Card.Text>
-            <Card.Link to={`/items/${id}`} className="mr-2">Learn More</Card.Link>
+            <Card.Link as={Link} to={`/items/${id}`} className="mr-2">Learn More</Card.Link>
           </div>
           <div className="mt-auto">    
           <AddToCartButton onClick={handleAddToCart} />
