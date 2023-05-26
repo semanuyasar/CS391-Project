@@ -7,16 +7,20 @@
       "line": "All the essentials in the most affordable iPad.",
       "price": "$329.99",
       "description":"Lorem",
-      "photoURL": "ipad.jpg"
+      "photoURL": "ipad.jpg",
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 2,
-      "name": "MacBook Air",
-      "feature": "M1 chip",
+      "name": "Apple 2020 MacBook Air Laptop M1 Chip, 13' Retina Display, 8GB RAM, 256GB SSD Storage",
+      "feature": "All-Day Battery Life – Go longer than ever with up to 18 hours of battery life.",
       "line": "Power. It’s in the Air.",
       "price": "$999.99", 
       "description":"Lorem",
-      "photoURL": "macbook.jpg"
+      "photoURL": "macbook.jpg",
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 3,
@@ -25,7 +29,9 @@
       "line": "Love the power. Love the price.",
       "price": "$699.99", 
       "description":"Lorem",
-      "photoURL": "iphone13.jpg"
+      "photoURL": "ipad.jpg",
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 4,
@@ -34,7 +40,9 @@
       "line": "It’s the ultimate device for a healthy life.",
       "price": "$249.99", 
       "description":"Lorem",
-      "photoURL": "watch.jpg"
+      "photoURL": "watch.jpg",
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 5,
@@ -43,7 +51,9 @@
       "line": "Lose your knack for losing things.",
       "price": "$29.99",
       "description":"Lorem",
-      "photoURL": "airtag.jpg"
+      "photoURL": "airtag.jpg",
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 6,
@@ -52,7 +62,9 @@
       "line": "Wireless. Effortless. Magical.",
       "price": "$129.99",
       "description":"Lorem",
-      "photoURL": "airpods.jpg"
+      "photoURL": "airpods2.jpg",
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 7,
@@ -61,7 +73,9 @@
       "line": "Mega power. Mini sized.",
       "price": "$499.99",
       "description":"Lorem",
-      "photoURL": "ipadmini.jpg"
+      "photoURL": "ipadmini.jpg",
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 8,
@@ -70,7 +84,9 @@
       "line": "Mover. Maker. Boundary breaker.",
       "price": "$1299.99",
       "description":"Lorem",
-      "photoURL": "macbookpro.jpg"
+      "photoURL": "macbookpro.jpg",
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     }
 
   ]
