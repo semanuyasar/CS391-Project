@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 
 function AddToCartButton() {
     return (
@@ -9,3 +10,18 @@ function AddToCartButton() {
   }
   
   export default AddToCartButton;
+=======
+import { Button } from 'react-bootstrap';
+
+const AddToCartButton = ({ onClick }) => {
+  return (
+    <div className="d-flex justify-content-center">
+      <Button variant="dark" onClick={onClick}>
+       Add to Cart
+      </Button>
+    </div>
+  );
+};
+
+export default AddToCartButton;
+>>>>>>> semanur

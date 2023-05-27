@@ -1,0 +1,113 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "iPad 9th generation",
+      "feature": "64 GB",
+      "line": "All the essentials in the most affordable iPad.",
+      "price": "329.99",
+      "description": "A14 Bionic chip. Liquid Retina display. Works with Apple Pencil (1st generation) and Magic Keyboard Folio.",
+      "photoURL": "ipad.jpg",
+      "photoURL1": "ipad_2.jpg",
+      "photoURL2": "ipad_3.jpg"
+    },
+    {
+      "id": 2,
+      "name": " MacBook Air ",
+      "feature": "M1 Chip",
+      "line": "Power. It’s in the Air.",
+      "price": "999.99",
+      "description": "13' Retina Display, 8GB RAM. All-Day Battery Life – Go longer than ever with up to 18 hours of battery life.",
+      "photoURL": "macbook.jpg",
+      "photoURL1": "macbook_2.jpg",
+      "photoURL2": "macbook_3.jpg"
+    },
+    {
+      "id": 3,
+      "name": "iPhone 13",
+      "feature": "256 GB",
+      "line": "Love the power. Love the price.",
+      "price": "699.99",
+      "description": "The iPhone 13 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.06 inches diagonally (actual viewable area is less). Super Retina XDR display. 6.1‑inch (diagonal) all‑screen OLED display. 2532‑by‑1170-pixel resolution at 460 ppi",
+      "photoURL": "iphone13.jpg",
+      "photoURL1": "iphone13_2.jpg",
+      "photoURL2": "iphone13_3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Apple Watch SE",
+      "feature": "",
+      "line": "It’s the ultimate device for a healthy life.",
+      "price": "249.99",
+      "description": "Retina display. Up to 1000 nits. High and low heart rate notifications. Cycle tracking. Emergency SOS. International emergency calling. Family Setup — pair multiple watches with one iPhone",
+      "photoURL1": "watch_2.jpg",
+      "photoURL2": "watch_3.jpg"
+    },
+    {
+      "id": 5,
+      "name": "AirTag",
+      "feature": "",
+      "line": "Lose your knack for losing things.",
+      "price": "29.99",
+      "description": "Long live the battery. Water resistant. Bluetooth for proximity finding Apple-designed U1 chip for Ultra Wideband and Precision Finding NFC tap for Lost Mode",
+      "photoURL": "airtag.jpg",
+      "photoURL1": "airtag_2.jpg",
+      "photoURL2": "airtag_3.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Airpods 2nd generation",
+      "feature": "",
+      "line": "Wireless. Effortless. Magical.",
+      "price": "129.99",
+      "description": "Lightning Charging Case. Up to 5 hours of listening time with a single charge. Dual beamforming microphones. Dual optical sensors. Motion-detecting accelerometer. Speech-detecting accelerometer.",
+      "photoURL": "airpods2.jpg",
+      "photoURL1": "airpods2_2.jpg",
+      "photoURL2": "airpods2_3.jpg"
+    },
+    {
+      "id": 7,
+      "name": "iPad Mini",
+      "feature": "128 GB",
+      "line": "Mega power. Mini sized.",
+      "price": "499.99",
+      "description": "Liquid Retina display. 8.3-inch (diagonal) LED-backlit Multi-Touch display with IPS technology. 2266-by-1488 resolution at 326 pixels per inch (ppi), A15 Bionic chip. 6-core CPU with 2 performance cores and 4 efficiency cores.",
+      "photoURL": "ipadmini.jpg",
+      "photoURL1": "ipadmini_2.jpg",
+      "photoURL2": "ipadmini_3.jpg"
+    },
+    {
+      "id": 8,
+      "name": "MacBook Pro",
+      "feature": "M2 chip",
+      "line": "Mover. Maker. Boundary breaker.",
+      "price": "1299.99",
+      "description": "13.3 inch Retina display. 8-core CPU. Up to 24GB unified memory. Maximum configurable storage. Up to 20 hours battery life. Touch Bar and Touch ID",
+      "photoURL": "macbookpro.jpg",
+      "photoURL1": "macbookpro_2.jpg",
+      "photoURL2": "macbookpro_3.jpg"
+    }
+  ],
+  "cart": [
+    {
+      "itemId": 3,
+      "itemName": "iPhone 13",
+      "itemPrice": "699.99",
+      "itemPhoto": "iphone13.jpg",
+      "quantity": 1,
+      "totalPrice": "699.99",
+      "id": 1
+    },
+    {
+      "itemId": 7,
+      "itemName": "iPad Mini",
+      "itemPrice": "499.99",
+      "itemPhoto": "ipadmini.jpg",
+      "quantity": 1,
+      "totalPrice": "499.99",
+      "id": 2
+    }
+  ],
+  "orders": [
+  ]
+}
