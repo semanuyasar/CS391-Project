@@ -1,19 +1,17 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
-const ContinueToPayment = () => {
-    const handleContinue = () => {
-        
-        
-    };
-
-    return (
-        <div className="container">
-            <button className="btn btn-primary" onClick={handleContinue}>
-                Continue to Checkout
-            </button>
-        </div>
-    );
+const ContinueToPaymentButton = ({ subtotal }) => {
+  return (
+    <Link
+      to={{
+        pathname: '/checkout',
+        state: { subtotal }
+      }}
+      className='btn btn-primary'
+    >
+      Continue to Payment
+    </Link>
+  );
 };
 
-export default ContinueToPayment;
+export default ContinueToPaymentButton;

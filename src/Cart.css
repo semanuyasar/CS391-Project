@@ -1,3 +1,9 @@
+.cart-body{
+  padding: 10px;
+  margin: 10px 10px 10px 10px;
+  border-radius: 5px;
+}
+
 .cart-item {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -25,6 +31,7 @@
   position: relative;
   width: 250px;
   height: 175px;;
+  justify-content: center;
 }
 
 .cart-item img {
@@ -52,3 +59,10 @@
   padding-left: 1rem;
 }
 
+
+@media (min-width: 100px) {
+  .cart-details-right {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

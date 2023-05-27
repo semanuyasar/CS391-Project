@@ -10,17 +10,17 @@
     align-items: center;
     
 }
-  
-.item-details-body > .row {
+
+.item-details-body>.row {
     margin-bottom: 20px;
     border-radius: 2%;
 }
-  
+
 .banner {
     margin-bottom: 20px;
     margin-top: 20px;
 }
-  
+
 .other-photos {
     display: flex;
     flex-wrap: wrap; /* Allow the photos to wrap to the next line */
@@ -28,7 +28,7 @@
     align-items: center;
     margin-top: 20px;
 }
-  
+
 .other-photos .col {
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@
     max-width: 100px; /* Limit the maximum width of each photo column */
     margin-bottom: 20px;
 }
-  
+
 .other-photos img {
     width: 100px;
     height: 100px;

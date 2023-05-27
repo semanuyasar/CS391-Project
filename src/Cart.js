@@ -4,10 +4,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Cart.css';
 import ContinueToPaymentButton from './components/ContinueToPaymentButton';
 import { Link } from 'react-router-dom';
+import CheckOutPage from './CheckOutPage';
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([]);
   const [subtotal, setSubtotal] = useState(0);
+  const [showCheckout, setShowCheckout] = useState(false);
 
   useEffect(() => {
     fetchCartItems();
@@ -36,25 +38,22 @@ const CartPage = () => {
   };
 
   const calculateSubtotal = () => {
-    const total = cartItems.reduce((acc, item) => {
-      const price = parseFloat(item.itemPrice.replace(/[^0-9.-]+/g, ''));
-      return acc + price;
+    const subtotal = cartItems.reduce((acc, item) => {
+      const totalPrice = parseFloat(item.totalPrice) || 0;
+      return acc + totalPrice;
     }, 0);
-    setSubtotal(total.toFixed(2));
+    setSubtotal(subtotal.toFixed(2));
   };
 
-  const savePriceToDatabase = async () => {
-    try {
-      await axios.post('http://localhost:3001/checkout', { subtotal });
-      console.log('Price saved to database:', subtotal);
-      // Perform any other necessary actions after saving the price to the database
-    } catch (error) {
-      console.log('Error saving price to database:', error);
-    }
+  const handleContinueToPayment = () => {
+    setShowCheckout(true);
   };
 
   return (
     <div className='container cart-body'>
+      <div className='row banner'>
+        <img src="./cart-banner.jpg"></img>
+      </div>
       <h1>Your Cart</h1>
 
       {cartItems.length === 0 ? (
@@ -62,46 +61,53 @@ const CartPage = () => {
           <h2>Your cart is empty.</h2>
         </div>
       ) : (
-        <div className='row cart-details'>
-          <div className='col-8 cart-details-left'>
-            <ul>
-              {cartItems.map((item) => (
-                <li key={item.id} className='cart-item'>
-                  <div className='item-header'>
-                    <h4>{item.itemName}</h4>
-                    <button className='delete-button' onClick={() => deleteCartItem(item.id)}>
-                      <span>&times;</span>
-                    </button>
-                  </div>
-                  <div className='item-details'>
-                    <div className='row'>
-                      <div className='col'>
-                        <img src={item.itemPhoto} alt='Item' style={{ width: '150px', height: '150px' }} />
+        <div className='container'>
+          <div className='row'>
+            <div className='col-md-7 col-lg-7'>
+              <div className='cart-details-left'>
+                <ul>
+                  {cartItems.map((item) => (
+                    <li key={item.id} className='cart-item'>
+                      <div className='item-header'>
+                        <h4>{item.itemName}</h4>
+                        <button className='delete-button' onClick={() => deleteCartItem(item.id)}>
+                          <span>&times;</span>
+                        </button>
                       </div>
-                      <div className='col'>
-                        <div className='item-info'>
-                          <h6>Quantity: {item.quantity}</h6>
-                          <h6>Price: {item.itemPrice}</h6>
-                          <h6>Seller: Everything Here!</h6>
-                          <h6>Free shipping, free returns!</h6>
+                      <div className='item-details'>
+                        <div className='row'>
+                          <div className='col-4 col-md-3'>
+                            <img src={item.itemPhoto} alt='Item' style={{ width: '100%', height: 'auto' }} />
+                          </div>
+                          <div className='col-8 col-md-9'>
+                            <div className='item-info'>
+                              <h6>Quantity: {item.quantity}</h6>
+                              <h6>Price: {item.itemPrice}</h6>
+                              <h6>Seller: Everything Here!</h6>
+                              <h6>Free shipping, free returns!</h6>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
 
-          <div className='col-4 cart-details-right'>
-            <h4>Order Summary</h4>
-            <h5>Total: {cartItems.length} items</h5>
-            <h5>Subtotal: ${subtotal}</h5>
-            <Link to='/checkout'>
-              <ContinueToPaymentButton onClick={savePriceToDatabase} />
-            </Link>
+            <div className='col-md-5 col-sm-12 col-lg-5'>
+              <div className='cart-details-right'>
+                <h4>Order Summary</h4>
+                <h5>Total: {cartItems.length} items</h5>
+                <h5>Subtotal: ${subtotal}</h5>
+                <Link to='/checkout'>
+                  <ContinueToPaymentButton handleContinueToPayment={handleContinueToPayment} />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
+
       )}
     </div>
   );

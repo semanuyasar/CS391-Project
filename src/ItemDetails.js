@@ -11,6 +11,8 @@ const ItemDetails = () => {
   const { id } = useParams();
   const [item, setItem] = useState({});
   const [selectedPhoto, setSelectedPhoto] = useState('');
+  const [cartItems, setCartItems] = useState([]);
+
 
   useEffect(() => {
     const fetchItem = async () => {
@@ -35,15 +37,42 @@ const ItemDetails = () => {
 
   const handleAddToCart = async () => {
     try {
-      const response = await axios.post('http://localhost:3001/cart', {
-        itemId: item.id,
-        itemName: item.name,
-        itemPrice: item.price,
-        itemPhoto: item.photoURL,
-        quantity: 1,
-      });
-      console.log('response:', response);
-      toast.success('Item added to cart successfully!, you can view your cart by clicking on the cart icon on the top right corner');
+      const existingCartItem = cartItems.find((cartItem) => cartItem.itemId === item.id);
+  
+      if (existingCartItem) {
+        const updatedQuantity = existingCartItem.quantity + 1;
+        const itemPrice = parseFloat(item.price) || 0; 
+        const updatedTotalPrice = itemPrice * updatedQuantity;
+  
+        const updatedCartItem = {
+          ...existingCartItem,
+          quantity: updatedQuantity,
+          totalPrice: updatedTotalPrice.toFixed(2), 
+        };
+
+        await axios.put(`http://localhost:3001/cart/${existingCartItem.id}`, updatedCartItem);
+  
+        setCartItems((prevCartItems) =>
+          prevCartItems.map((cartItem) => (cartItem.itemId === item.id ? updatedCartItem : cartItem))
+        );
+      } else {
+        const itemPrice = parseFloat(item.price) || 0; 
+        const newCartItem = {
+          itemId: item.id,
+          itemName: item.name,
+          itemPrice: itemPrice.toFixed(2),
+          itemPhoto: item.photoURL,
+          quantity: 1,
+          totalPrice: itemPrice.toFixed(2),
+        };
+
+        const response = await axios.post('http://localhost:3001/cart', newCartItem);
+
+        setCartItems((prevCartItems) => [...prevCartItems, response.data]);
+      }
+  
+      console.log('Item added to cart successfully!');
+      toast.success('Item added to cart successfully! You can view your cart by clicking on the cart icon on the top right corner');
     } catch (error) {
       console.error('Error adding item to cart:', error);
       toast.error('Error adding item to cart. Please try again.');
@@ -54,7 +83,7 @@ const ItemDetails = () => {
     <div className="item-details-page">
       <div className='container item-details-body'>
         <div className="row banner">
-          <img src="/banner.jpg" alt="Banner" />
+          <img className='game-banner' src="/game-banner.jpg" alt="Banner" />
         </div>
 
         <div className="row item-details">
@@ -70,7 +99,7 @@ const ItemDetails = () => {
             <h5>{item.feature}</h5>
             <p>{item.line}</p>
             <p>{item.description}</p>
-            <span>{item.price}</span>
+            <span>${item.price}</span>
             
             <AddToCartButton onClick={handleAddToCart} />
           </div>
