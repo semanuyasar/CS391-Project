@@ -1,13 +1,6 @@
 import React from 'react';
 import { Col,Card } from 'react-bootstrap';
-import AddToCartButton from './components/AddToCartButton';
-import {Link} from 'react-router-dom'
-
-const handleAddToCart = () => {
-    // Logic for adding the product to the cart
-    console.log(`Product ${item.id} added to cart`);
-    //history.push(`/items/${id}`);
-};
+import {Link} from 'react-router-dom';
 
 const ItemCard = ({ id,item }) => {
 
@@ -22,10 +15,7 @@ const ItemCard = ({ id,item }) => {
           <Card.Text>{item.feature}</Card.Text>
           <Card.Text>{item.line}</Card.Text>
           <Card.Text>{item.price}</Card.Text>
-          <Card.Link as={Link} to={`/items/${id}`} className="mr-2">Learn More</Card.Link>
-        </div>
-        <div className="mt-auto">
-          <AddToCartButton onClick={handleAddToCart} />
+          <Card.Link as={Link} to={`/items/${id}`} className="mr-2">View More</Card.Link>
         </div>
       </Card.Body>
     </Card>
