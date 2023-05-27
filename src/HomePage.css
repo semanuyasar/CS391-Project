@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
   }
-  
+
 .wide-image {
     width: 100%;
     height: auto;
@@ -19,4 +19,8 @@
 
 .homepage {
   display: flex;
+}
+
+.mr-2 {
+  color: aliceblue;
 }

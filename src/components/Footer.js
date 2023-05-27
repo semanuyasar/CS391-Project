@@ -22,10 +22,10 @@ const Footer = () => {
           <Col md={4}>
             <h5>Follow Us</h5>
             <div className="social-icons">
-              <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
-              <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
-              <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
-              <a href="#"><FontAwesomeIcon icon={faLinkedin} /></a>
+              <a href="#fb"><FontAwesomeIcon icon={faFacebook} /></a>
+              <a href="#twitter"><FontAwesomeIcon icon={faTwitter} /></a>
+              <a href="#instagram"><FontAwesomeIcon icon={faInstagram} /></a>
+              <a href="#linkedin"><FontAwesomeIcon icon={faLinkedin} /></a>
             </div>
           </Col>
         </Row>

@@ -56,7 +56,7 @@ const renderProductCard = (id, name, feature, line, price, imagePath) => {
             <Card.Text>{feature}</Card.Text>
             <Card.Text>{line}</Card.Text>
             <Card.Text>{price}</Card.Text>
-            <Card.Link as={Link} to={`/items/${id}`} className="mr-2">Learn More</Card.Link>
+            <Button><Card.Link as={Link} to={`/items/${id}`} className="mr-2">Learn More</Card.Link></Button>
           </div>
         </Card.Body>
       </Card>

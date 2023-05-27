@@ -14,17 +14,18 @@ function CustomNavbar() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/categories">Categories</Nav.Link>
             <Nav.Link href="/deals">Deals</Nav.Link>
-            <Form inline className="ml-auto d-lg-block d-none">
+            <Form inline="true" className="ml-auto d-lg-block d-none">
               <FormControl type="text" placeholder="Search" className="mr-sm-2 custom-search-bar" />
             </Form>
+
           </Nav>
           <Nav className="ml-auto">
             <Nav className="custom-right">
-            <Nav.Link href="/cart">Cart</Nav.Link>
-            <Nav.Link href="/account">Account</Nav.Link>
+              <Nav.Link href="/cart">Cart</Nav.Link>
+              <Nav.Link href="/account">Account</Nav.Link>
             </Nav>
             <Button variant="outline-light" size='sm' href="/sign-up" className="custom-button">Sign Up</Button>
-            </Nav>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

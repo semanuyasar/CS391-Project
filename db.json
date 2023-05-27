@@ -40,6 +40,7 @@
       "line": "It’s the ultimate device for a healthy life.",
       "price": "249.99",
       "description": "Retina display. Up to 1000 nits. High and low heart rate notifications. Cycle tracking. Emergency SOS. International emergency calling. Family Setup — pair multiple watches with one iPhone",
+      "photoURL": "watch.jpg",
       "photoURL1": "watch_2.jpg",
       "photoURL2": "watch_3.jpg"
     },
@@ -51,7 +52,7 @@
       "price": "29.99",
       "description": "Long live the battery. Water resistant. Bluetooth for proximity finding Apple-designed U1 chip for Ultra Wideband and Precision Finding NFC tap for Lost Mode",
       "photoURL": "airtag.jpg",
-      "photoURL1": "airtag_2.jpg",
+      "photoURL1": "airtag_2.jpeg",
       "photoURL2": "airtag_3.jpg"
     },
     {
@@ -85,29 +86,9 @@
       "description": "13.3 inch Retina display. 8-core CPU. Up to 24GB unified memory. Maximum configurable storage. Up to 20 hours battery life. Touch Bar and Touch ID",
       "photoURL": "macbookpro.jpg",
       "photoURL1": "macbookpro_2.jpg",
-      "photoURL2": "macbookpro_3.jpg"
+      "photoURL2": "macbookpro_3.jpeg"
     }
   ],
-  "cart": [
-    {
-      "itemId": 3,
-      "itemName": "iPhone 13",
-      "itemPrice": "699.99",
-      "itemPhoto": "iphone13.jpg",
-      "quantity": 1,
-      "totalPrice": "699.99",
-      "id": 1
-    },
-    {
-      "itemId": 7,
-      "itemName": "iPad Mini",
-      "itemPrice": "499.99",
-      "itemPhoto": "ipadmini.jpg",
-      "quantity": 1,
-      "totalPrice": "499.99",
-      "id": 2
-    }
-  ],
-  "orders": [
-  ]
+  "cart": [],
+  "orders": []
 }

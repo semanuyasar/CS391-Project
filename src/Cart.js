@@ -52,7 +52,7 @@ const CartPage = () => {
   return (
     <div className='container cart-body'>
       <div className='row banner'>
-        <img src="./cart-banner.jpg"></img>
+        <img src="./cart-banner.jpg" alt="cart-banner"></img>
       </div>
       <h1>Your Cart</h1>
 
