@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import AddToCartButton from './components/AddToCartButton';
 import { useParams } from 'react-router-dom';
 import './ItemDetails.css';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ItemDetails = () => {
   const { id } = useParams();
@@ -31,6 +33,23 @@ const ItemDetails = () => {
     return <div>Loading...</div>;
   }
 
+  const handleAddToCart = async () => {
+    try {
+      const response = await axios.post('http://localhost:3001/cart', {
+        itemId: item.id,
+        itemName: item.name,
+        itemPrice: item.price,
+        itemPhoto: item.photoURL,
+        quantity: 1,
+      });
+      console.log('response:', response);
+      toast.success('Item added to cart successfully!, you can view your cart by clicking on the cart icon on the top right corner');
+    } catch (error) {
+      console.error('Error adding item to cart:', error);
+      toast.error('Error adding item to cart. Please try again.');
+    }
+  };
+
   return (
     <div className="item-details-page">
       <div className='container item-details-body'>
@@ -44,31 +63,44 @@ const ItemDetails = () => {
               <img src={`/${selectedPhoto || item.photoURL}`} alt="Item" />
             </div>
           </div>
+
           <div className='col-4 item-details-right'>
             <h2>{item.name}</h2>
             <h4>{item.feature}</h4>
             <p>{item.line}</p>
             <span>{item.price}</span>
             <p>{item.description}</p>
-            <AddToCartButton />
+            <AddToCartButton onClick={handleAddToCart} />
           </div>
-        
+        </div>
 
-          <div className='row other-photos'>
-            <div className='row'>
-              <div className='col-2'>
-               <img src={`/${item.photoURL}`} alt="Item Photo" onClick={() => handlePhotoClick(item.photoURL)} />
-              </div>
-              <div className='col-2'>
-               <img src={`/${item.photoURL1}`} alt="Item Photo" onClick={() => handlePhotoClick(item.photoURL1)} />
-              </div>
-              <div className='col-2'>
-                <img src={`/${item.photoURL2}`} alt="Item Photo" onClick={() => handlePhotoClick(item.photoURL2)} />
-              </div>
+        <div className='row other-photos'>
+          <div className='row'>
+            <div className='col-2'>
+              <img src={`/${item.photoURL}`} alt="Item Photo" onClick={() => handlePhotoClick(item.photoURL)} />
+            </div>
+            <div className='col-2'>
+              <img src={`/${item.photoURL1}`} alt="Item Photo" onClick={() => handlePhotoClick(item.photoURL1)} />
+            </div>
+            <div className='col-2'>
+              <img src={`/${item.photoURL2}`} alt="Item Photo" onClick={() => handlePhotoClick(item.photoURL2)} />
             </div>
           </div>
         </div>
       </div>
+
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </div>
   );
 };

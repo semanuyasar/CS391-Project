@@ -8,19 +8,19 @@
       "price": "$329.99",
       "description": "Lorem",
       "photoURL": "ipad.jpg",
-      "photoURL1": "ipad_2.jpg",
-      "photoURL2": "ipad_3.jpg"
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 2,
-      "name": "Apple 2020 MacBook Air Laptop M1 Chip, 13' Retina Display, 8GB RAM",
+      "name": "Apple 2020 MacBook Air Laptop M1 Chip, 13' Retina Display, 8GB RAM, 256GB SSD Storage",
       "feature": "All-Day Battery Life – Go longer than ever with up to 18 hours of battery life.",
       "line": "Power. It’s in the Air.",
       "price": "$999.99",
       "description": "Lorem",
       "photoURL": "macbook.jpg",
-      "photoURL1": "macbook_2.jpg",
-      "photoURL2": "macbook_3.jpg"
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 3,
@@ -29,9 +29,9 @@
       "line": "Love the power. Love the price.",
       "price": "$699.99",
       "description": "Lorem",
-      "photoURL": "iphone13.jpg",
-      "photoURL1": "iphone13_2.jpg",
-      "photoURL2": "iphone13_3.jpg"
+      "photoURL": "ipad.jpg",
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 4,
@@ -41,8 +41,8 @@
       "price": "$249.99",
       "description": "Lorem",
       "photoURL": "watch.jpg",
-      "photoURL1": "watch_2.jpg",
-      "photoURL2": "watch_3.jpg"
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 5,
@@ -52,8 +52,8 @@
       "price": "$29.99",
       "description": "Lorem",
       "photoURL": "airtag.jpg",
-      "photoURL1": "airtag_2.jpg",
-      "photoURL2": "airtag_3.jpg"
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 6,
@@ -63,8 +63,8 @@
       "price": "$129.99",
       "description": "Lorem",
       "photoURL": "airpods2.jpg",
-      "photoURL1": "airpods2_2.jpg",
-      "photoURL2": "airpods2_3.jpg"
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 7,
@@ -74,8 +74,8 @@
       "price": "$499.99",
       "description": "Lorem",
       "photoURL": "ipadmini.jpg",
-      "photoURL1": "ipadmini_2.jpg",
-      "photoURL2": "ipadmini_3.jpg"
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 8,
@@ -85,8 +85,8 @@
       "price": "$1299.99",
       "description": "Lorem",
       "photoURL": "macbookpro.jpg",
-      "photoURL1": "macbookpro_2.jpg",
-      "photoURL2": "macbookpro_3.jpg"
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     }
   ],
   "cart": [
@@ -94,26 +94,29 @@
       "itemId": 3,
       "itemName": "iPhone 13",
       "itemPrice": "$699.99",
-      "itemPhoto": "iphone13.jpg",
-      "quantity": 1,
+      "itemPhoto": "ipad.jpg",
       "id": 1
+    },
+    {
+      "itemId": 3,
+      "itemName": "iPhone 13",
+      "itemPrice": "$699.99",
+      "itemPhoto": "ipad.jpg",
+      "id": 2
     },
     {
       "itemId": 6,
       "itemName": "Airpods 2nd generation",
       "itemPrice": "$129.99",
       "itemPhoto": "airpods2.jpg",
-      "quantity": 1,
-      "id": 2
+      "id": 3
     },
     {
-      "itemId": 1,
-      "itemName": "iPad 9th generation",
-      "itemPrice": "$329.99",
-      "itemPhoto": "ipad.jpg",
-      "quantity": 1,
-      "id": 3
+      "itemId": 2,
+      "itemName": "Apple 2020 MacBook Air Laptop M1 Chip, 13' Retina Display, 8GB RAM, 256GB SSD Storage",
+      "itemPrice": "$999.99",
+      "itemPhoto": "macbook.jpg",
+      "id": 4
     }
-  ],
-  "checkout": []
+  ]
 }

@@ -13,11 +13,11 @@
     },
     {
       "id": 2,
-      "name": "Apple 2020 MacBook Air Laptop M1 Chip, 13' Retina Display, 8GB RAM",
-      "feature": "All-Day Battery Life – Go longer than ever with up to 18 hours of battery life.",
+      "name": "MacBook Air",
+      "feature": "M1 chip",
       "line": "Power. It’s in the Air.",
       "price": "$999.99",
-      "description": "Lorem",
+      "description": "Apple 2020 Laptop M1 Chip, 13' Retina Display, 8GB RAM, 256GB SSD Storage. All-Day Battery Life – Go longer than ever with up to 18 hours of battery life.",
       "photoURL": "macbook.jpg",
       "photoURL1": "macbook_2.jpg",
       "photoURL2": "macbook_3.jpg"
@@ -88,32 +88,5 @@
       "photoURL1": "macbookpro_2.jpg",
       "photoURL2": "macbookpro_3.jpg"
     }
-  ],
-  "cart": [
-    {
-      "itemId": 3,
-      "itemName": "iPhone 13",
-      "itemPrice": "$699.99",
-      "itemPhoto": "iphone13.jpg",
-      "quantity": 1,
-      "id": 1
-    },
-    {
-      "itemId": 6,
-      "itemName": "Airpods 2nd generation",
-      "itemPrice": "$129.99",
-      "itemPhoto": "airpods2.jpg",
-      "quantity": 1,
-      "id": 2
-    },
-    {
-      "itemId": 1,
-      "itemName": "iPad 9th generation",
-      "itemPrice": "$329.99",
-      "itemPhoto": "ipad.jpg",
-      "quantity": 1,
-      "id": 3
-    }
-  ],
-  "checkout": []
+  ]
 }

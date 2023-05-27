@@ -6,43 +6,43 @@
       "feature": "64 GB",
       "line": "All the essentials in the most affordable iPad.",
       "price": "$329.99",
-      "description":"Lorem",
+      "description": "Lorem",
       "photoURL": "ipad.jpg",
-      "photoURL1": "ipad_2.jpg",
-      "photoURL2": "ipad_3.jpg"
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 2,
-      "name": "MacBook Air",
-      "feature": "M1 chip",
+      "name": "Apple 2020 MacBook Air Laptop M1 Chip, 13' Retina Display, 8GB RAM, 256GB SSD Storage",
+      "feature": "All-Day Battery Life – Go longer than ever with up to 18 hours of battery life.",
       "line": "Power. It’s in the Air.",
-      "price": "$999.99", 
-      "description":"Apple 2020 Laptop M1 Chip, 13' Retina Display, 8GB RAM, 256GB SSD Storage. All-Day Battery Life – Go longer than ever with up to 18 hours of battery life.",
+      "price": "$999.99",
+      "description": "Lorem",
       "photoURL": "macbook.jpg",
-      "photoURL1": "macbook_2.jpg",
-      "photoURL2": "macbook_3.jpg"
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 3,
       "name": "iPhone 13",
       "feature": "256 GB",
       "line": "Love the power. Love the price.",
-      "price": "$699.99", 
-      "description":"Lorem",
-      "photoURL": "iphone13.jpg",
-      "photoURL1": "iphone13_2.jpg",
-      "photoURL2": "iphone13_3.jpg"
+      "price": "$699.99",
+      "description": "Lorem",
+      "photoURL": "ipad.jpg",
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 4,
       "name": "Apple Watch SE",
       "feature": "",
       "line": "It’s the ultimate device for a healthy life.",
-      "price": "$249.99", 
-      "description":"Lorem",
+      "price": "$249.99",
+      "description": "Lorem",
       "photoURL": "watch.jpg",
-      "photoURL1": "watch_2.jpg",
-      "photoURL2": "watch_3.jpg"
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 5,
@@ -50,10 +50,10 @@
       "feature": "",
       "line": "Lose your knack for losing things.",
       "price": "$29.99",
-      "description":"Lorem",
+      "description": "Lorem",
       "photoURL": "airtag.jpg",
-      "photoURL1": "airtag_2.jpg",
-      "photoURL2": "airtag_3.jpg"
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 6,
@@ -61,10 +61,10 @@
       "feature": "",
       "line": "Wireless. Effortless. Magical.",
       "price": "$129.99",
-      "description":"Lorem",
+      "description": "Lorem",
       "photoURL": "airpods2.jpg",
-      "photoURL1": "airpods2_2.jpg",
-      "photoURL2": "airpods2_3.jpg"
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 7,
@@ -72,10 +72,10 @@
       "feature": "128 GB",
       "line": "Mega power. Mini sized.",
       "price": "$499.99",
-      "description":"Lorem",
+      "description": "Lorem",
       "photoURL": "ipadmini.jpg",
-      "photoURL1": "ipadmini_2.jpg",
-      "photoURL2": "ipadmini_3.jpg"
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     },
     {
       "id": 8,
@@ -83,11 +83,10 @@
       "feature": "M2 chip",
       "line": "Mover. Maker. Boundary breaker.",
       "price": "$1299.99",
-      "description":"Lorem",
+      "description": "Lorem",
       "photoURL": "macbookpro.jpg",
-      "photoURL1": "macbookpro_2.jpg",
-      "photoURL2": "macbookpro_3.jpg"
+      "photoURL1": "macbook.jpg",
+      "photoURL2": "iphone13.jpg"
     }
-
   ]
 }
