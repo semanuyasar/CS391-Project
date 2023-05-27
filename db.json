@@ -6,18 +6,18 @@
       "feature": "64 GB",
       "line": "All the essentials in the most affordable iPad.",
       "price": "$329.99",
-      "description": "Lorem",
+      "description": "A14 Bionic chip. Liquid Retina display. Works with Apple Pencil (1st generation) and Magic Keyboard Folio.",
       "photoURL": "ipad.jpg",
       "photoURL1": "ipad_2.jpg",
       "photoURL2": "ipad_3.jpg"
     },
     {
       "id": 2,
-      "name": "Apple 2020 MacBook Air Laptop M1 Chip, 13' Retina Display, 8GB RAM",
-      "feature": "All-Day Battery Life – Go longer than ever with up to 18 hours of battery life.",
+      "name": " MacBook Air ",
+      "feature": "M1 Chip",
       "line": "Power. It’s in the Air.",
       "price": "$999.99",
-      "description": "Lorem",
+      "description": "13' Retina Display, 8GB RAM. All-Day Battery Life – Go longer than ever with up to 18 hours of battery life.",
       "photoURL": "macbook.jpg",
       "photoURL1": "macbook_2.jpg",
       "photoURL2": "macbook_3.jpg"
@@ -28,7 +28,7 @@
       "feature": "256 GB",
       "line": "Love the power. Love the price.",
       "price": "$699.99",
-      "description": "Lorem",
+      "description": "The iPhone 13 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 6.06 inches diagonally (actual viewable area is less). Super Retina XDR display. 6.1‑inch (diagonal) all‑screen OLED display. 2532‑by‑1170-pixel resolution at 460 ppi",
       "photoURL": "iphone13.jpg",
       "photoURL1": "iphone13_2.jpg",
       "photoURL2": "iphone13_3.jpg"
@@ -39,8 +39,7 @@
       "feature": "",
       "line": "It’s the ultimate device for a healthy life.",
       "price": "$249.99",
-      "description": "Lorem",
-      "photoURL": "watch.jpg",
+      "description": "Retina display. Up to 1000 nits. High and low heart rate notifications. Cycle tracking. Emergency SOS. International emergency calling. Family Setup — pair multiple watches with one iPhone",
       "photoURL1": "watch_2.jpg",
       "photoURL2": "watch_3.jpg"
     },
@@ -50,7 +49,7 @@
       "feature": "",
       "line": "Lose your knack for losing things.",
       "price": "$29.99",
-      "description": "Lorem",
+      "description": "Long live the battery. Splish, splash.",
       "photoURL": "airtag.jpg",
       "photoURL1": "airtag_2.jpg",
       "photoURL2": "airtag_3.jpg"
@@ -91,28 +90,20 @@
   ],
   "cart": [
     {
-      "itemId": 3,
-      "itemName": "iPhone 13",
-      "itemPrice": "$699.99",
-      "itemPhoto": "iphone13.jpg",
+      "itemId": 2,
+      "itemName": " MacBook Air ",
+      "itemPrice": "$999.99",
+      "itemPhoto": "macbook.jpg",
       "quantity": 1,
       "id": 1
     },
     {
-      "itemId": 6,
-      "itemName": "Airpods 2nd generation",
-      "itemPrice": "$129.99",
-      "itemPhoto": "airpods2.jpg",
+      "itemId": 2,
+      "itemName": " MacBook Air ",
+      "itemPrice": "$999.99",
+      "itemPhoto": "macbook.jpg",
       "quantity": 1,
       "id": 2
-    },
-    {
-      "itemId": 1,
-      "itemName": "iPad 9th generation",
-      "itemPrice": "$329.99",
-      "itemPhoto": "ipad.jpg",
-      "quantity": 1,
-      "id": 3
     }
   ],
   "checkout": []

@@ -54,7 +54,7 @@ const ItemDetails = () => {
     <div className="item-details-page">
       <div className='container item-details-body'>
         <div className="row banner">
-          <img src="banner.jpg" alt="Banner" />
+          <img src="/banner.jpg" alt="Banner" />
         </div>
 
         <div className="row item-details">
@@ -62,28 +62,32 @@ const ItemDetails = () => {
             <div className='row main-photo'>
               <img src={`/${selectedPhoto || item.photoURL}`} alt="Item" />
             </div>
+            
           </div>
 
           <div className='col-4 item-details-right'>
             <h2>{item.name}</h2>
-            <h4>{item.feature}</h4>
+            <h5>{item.feature}</h5>
             <p>{item.line}</p>
-            <span>{item.price}</span>
             <p>{item.description}</p>
+            <span>{item.price}</span>
+            
             <AddToCartButton onClick={handleAddToCart} />
           </div>
         </div>
 
         <div className='row other-photos'>
-          <div className='row'>
-            <div className='col-2'>
-              <img src={`/${item.photoURL}`} alt="Item Photo" onClick={() => handlePhotoClick(item.photoURL)} />
-            </div>
-            <div className='col-2'>
-              <img src={`/${item.photoURL1}`} alt="Item Photo" onClick={() => handlePhotoClick(item.photoURL1)} />
-            </div>
-            <div className='col-2'>
-              <img src={`/${item.photoURL2}`} alt="Item Photo" onClick={() => handlePhotoClick(item.photoURL2)} />
+          <div className='container col-8'>
+            <div className='row'>
+              <div className='col-md-2 col-4'>
+                <img src={`/${item.photoURL}`} alt="Item Photo" onClick={() => handlePhotoClick(item.photoURL)} />
+              </div>
+              <div className='col-md-2 col-4'>
+                <img src={`/${item.photoURL1}`} alt="Item Photo" onClick={() => handlePhotoClick(item.photoURL1)} />
+              </div>
+              <div className='col-md-2 col-4'>
+                <img src={`/${item.photoURL2}`} alt="Item Photo" onClick={() => handlePhotoClick(item.photoURL2)} />
+              </div>
             </div>
           </div>
         </div>

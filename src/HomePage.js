@@ -32,6 +32,8 @@ const HomePage = () => {
         {renderProductCard(4, 'Apple Watch SE', '', 'It’s the ultimate device for a healthy life.', '$249.99', 'watch.jpg')}
         {renderProductCard(5, 'AirTag', '', 'Lose your knack for losing things.', '$29.99', 'airtag.jpg')}
         {renderProductCard(6, 'Airpods 2nd generation', '', 'Wireless. Effortless. Magical.', '$129.99', 'airpods2.jpg')}
+        {renderProductCard(7, 'iPad Mini', '128 GB', 'Mega power. Mini sized.', '$499.99', 'ipadmini.jpg')}
+        {renderProductCard(8, 'MacBook Pro', 'M2 chip', 'Mover. Maker. Boundary breaker.', '$1299.99', 'macbookpro.jpg')}
       </Row>
     </Container>
   );
@@ -55,9 +57,6 @@ const renderProductCard = (id, name, feature, line, price, imagePath) => {
             <Card.Text>{line}</Card.Text>
             <Card.Text>{price}</Card.Text>
             <Card.Link as={Link} to={`/items/${id}`} className="mr-2">Learn More</Card.Link>
-          </div>
-          <div className="mt-auto">
-            <AddToCartButton onClick={handleAddToCart} />
           </div>
         </Card.Body>
       </Card>

@@ -24,4 +24,3 @@ const ItemCard = ({ id,item }) => {
 };
 
 export default ItemCard;
-
